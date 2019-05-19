@@ -1,5 +1,8 @@
-# TourOfCarebears
+Working on creating my first Angular7 project in a hopefully a few days!
 
+Website link coming soon!
+
+# AngularProject
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
 ## Development server
