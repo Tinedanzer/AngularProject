@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NameComponent } from './name-labels.component';
+import { TESTINGComponent } from './testing/testing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NameComponent
+    NameComponent,
+    TESTINGComponent
   ],
   imports: [
     BrowserModule
