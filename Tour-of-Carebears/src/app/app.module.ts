@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NameComponent } from './name-labels.component';
 import { TESTINGComponent } from './testing/testing.component';
+import { NamesService } from './name-labels.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { TESTINGComponent } from './testing/testing.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    NamesService
+  ],
   bootstrap: [
     AppComponent
   ]

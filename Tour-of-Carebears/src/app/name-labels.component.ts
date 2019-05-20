@@ -1,20 +1,28 @@
 import{Component} from '@angular/core';
+import { NamesService } from './name-labels.service';
 
 @Component({
     selector: 'names',
     template: `<h2>{{"Names of Carebears: " + getList() }}</h2>
-            <ul *ngFor='let x of carebears'>
+            <ul >
+                <li *ngFor='let x of carebears'>
                 {{ x }}
+                </li>
             </ul>`
 
 })
 export class NameComponent{
-    // objBear={
-    //     1:'aroo'
-    // }
-    title=['Grumpy Bear', 'aroo', 'pew pew'].join('™ ▬ ');
-    carebears=['Grumpy Bear', 'sunshine bear']
+    objBear={
+        veww:'aroo',
+        title:['Grumpy Bear', 'aroo', 'pew pew'].join('™ ▬ ')
+    }
+    carebears;
+// important for scaling to pass modifiable code in this constructor in a services(providers) file
+// (like name-labels.services.ts);  HUGE FOR Scalabity when you need to reuse functions and/or DATA! pew
+    constructor(service: NamesService){
+        this.carebears=service.getNames();
+    }
     getList(){
-        return this.title;
+        return this.objBear.title;
     }
 }
