@@ -6,9 +6,11 @@ import{Carebear} from '../carebearSelection';
   styleUrls: ['./carebears.component.css']
 })
 export class CarebearsComponent implements OnInit {
-  moreCarebears: Carebear={
+// eventually making a reusable object by assigning class Carebear to 'carebears' variable below.
+  carebears: Carebear={
     id:1,
-    name: "Grumpy Bear"
+    name: "Grumpy Bear",
+    powerlevel:469
   };
   constructor() { }
 
