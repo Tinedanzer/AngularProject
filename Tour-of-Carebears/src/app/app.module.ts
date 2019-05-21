@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NameComponent } from './name-labels.component';
-import { TESTINGComponent } from './testing/testing.component';
 import { NamesService } from './name-labels.service';
+import { CarebearsComponent } from './carebears/carebears.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NameComponent,
-    TESTINGComponent
+    CarebearsComponent
   ],
   imports: [
     BrowserModule
