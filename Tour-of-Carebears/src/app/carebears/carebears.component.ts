@@ -10,11 +10,13 @@ export class CarebearsComponent implements OnInit {
   carebearSet: Carebear={
     id:1,
     name: "Grumpy Bear",
-    powerLevel:469
+    powerLevel:465
   };
   constructor() { }
 
   ngOnInit() {
+    console.log(this.carebearSet)
   }
 
 }
+
