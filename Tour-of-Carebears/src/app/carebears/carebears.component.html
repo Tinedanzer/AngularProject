@@ -3,8 +3,12 @@
 <li>{{carebearSet.name}}</li>
 <li>{{carebearSet.powerLevel}}</li>
 </ul> -->
-
-<h2>{{carebearSet.name|uppercase}} details:</h2>
-<div><span>id: </span>{{carebearSet.id}}</div>
-<div><span>name: </span>{{carebearSet.name|lowercase}}</div>
+<h2>{{carebearSet.name|uppercase}} DETAILS:</h2>
+<div>
+    <label>Name Change:
+      <input [(ngModel)]="carebearSet.name" placeholder="name"/>
+    </label>
+</div>
+<div><span>Id: </span>{{carebearSet.id}}</div>
+<div><span>Name: </span>{{carebearSet.name|lowercase}}</div>
 <div><span>Power Level: </span>{{carebearSet.powerLevel}}</div>
