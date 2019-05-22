@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import{Carebear} from '../carebearSelection';
+import {CarebearHeroes} from '../carebearHeroes';
 @Component({
   selector: 'app-carebears',
   templateUrl: './carebears.component.html',
@@ -7,6 +8,7 @@ import{Carebear} from '../carebearSelection';
 })
 
 export class CarebearsComponent implements OnInit {
+  care=CarebearHeroes;
   carebearSet: Carebear={
     id:1,
     name: "Grumpy Bear",
@@ -15,7 +17,7 @@ export class CarebearsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.carebearSet)
+    // console.log(this.carebearSet)
   }
 
 }

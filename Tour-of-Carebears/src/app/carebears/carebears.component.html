@@ -1,14 +1,20 @@
-<!-- <ul>
-<li>{{carebearSet.id}}</li>
-<li>{{carebearSet.name}}</li>
-<li>{{carebearSet.powerLevel}}</li>
-</ul> -->
-<h2>{{carebearSet.name|uppercase}} DETAILS:</h2>
+<!-- Listing carebears using *ngFor from carebear.components which retrieves from carebearHeroes;
+which retrieves the template from carebearSelection -->
+<div>{{carebearSet.name|uppercase}} DETAILS:</div>
 <div>
-    <label>Name Change:
+    <label>
       <input [(ngModel)]="carebearSet.name" placeholder="name"/>
     </label>
 </div>
 <div><span>Id: </span>{{carebearSet.id}}</div>
 <div><span>Name: </span>{{carebearSet.name|lowercase}}</div>
 <div><span>Power Level: </span>{{carebearSet.powerLevel}}</div>
+<h2>List of Carebears:</h2>
+<div>
+  <ul class='CarebearHeroes'>
+    <li *ngFor="let x of care">
+        <span class="badge">{{x.id}}. </span> 
+        {{x.name}}: 
+        <span class='power'>~ Power Level: {{x.powerLevel}}</span>
+    </li>
+</ul></div>
